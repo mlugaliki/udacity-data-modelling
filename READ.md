@@ -35,4 +35,6 @@ Open settings.py and update the following settings
 ```python
 python main.py
 ```
+![Optional Text](db.png)
+
 NB running this from your python virtual environment

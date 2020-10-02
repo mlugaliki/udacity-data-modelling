@@ -9,18 +9,21 @@ time_table_drop = "DROP TABLE IF EXISTS time;"
 # CREATE TABLES
 
 songplay_table_create = ("""
-CREATE TABLE songplays
-(
-    songplyid  numeric    NOT NULL,
-    start_time timestamp  NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    user_id    numeric    NOT NULL,
-    song_id    varchar,
-    artist_id  varchar,
-    session_id numeric    NOT NULL,
-    location   varchar    NOT NULL,
-    user_agent varchar    NOT NULL,
-    level      varchar(4) NOT NULL,
-    CONSTRAINT songplays_pk PRIMARY KEY (songplyid)
+CREATE TABLE public.songplays (
+	songplyid numeric NOT NULL,
+	start_time timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	user_id numeric NOT NULL,
+	song_id varchar NULL,
+	artist_id varchar NULL,
+	session_id numeric NOT NULL,
+	location varchar NOT NULL,
+	user_agent varchar NOT NULL,
+	level varchar(4) NOT NULL,
+	CONSTRAINT songplays_pk PRIMARY KEY (songplyid),
+	CONSTRAINT songplays_artist_fk FOREIGN KEY (artist_id) REFERENCES artists(artist_id),
+	CONSTRAINT songplays_songs_fk FOREIGN KEY (song_id) REFERENCES songs(song_id),
+	CONSTRAINT songplays_time_fk FOREIGN KEY (start_time) REFERENCES "time"(start_time),
+	CONSTRAINT songplays_users_fk FOREIGN KEY (user_id) REFERENCES users(user_id)
 )
 """)
 
@@ -62,16 +65,17 @@ CREATE TABLE artists
 """)
 
 time_table_create = ("""
-CREATE TABLE time
-(
-    start_time timestamp    NOT NULL,
-    hour       integer    NOT NULL,
-    day        integer NOT NULL,
-    week       integer NOT NULL,
-    month      integer NOT NULL,
-    year       integer NOT NULL,
-    weekday    integer NOT NULL
+CREATE TABLE time (
+	start_time timestamp NOT NULL,
+	hour int4 NOT NULL,
+	day int4 NOT NULL,
+	week int4 NOT NULL,
+	month int4 NOT NULL,
+	year int4 NOT NULL,
+	weekday int4 NOT NULL,
+	CONSTRAINT time_pk PRIMARY KEY (start_time)
 )
+
 """)
 
 # INSERT RECORDS
@@ -93,8 +97,7 @@ song_table_insert = ("""
 INSERT INTO songs(song_id, title, artist_id, \"year\", duration)
 VALUES(%s,%s,%s,%s,%s) 
 ON CONFLICT ON CONSTRAINT songs_pk 
-DO 
-UPDATE SET title = EXCLUDED.title, artist_id = EXCLUDED.artist_id, duration=EXCLUDED.duration,year=EXCLUDED.year
+DO NOTHING
 """)
 
 artist_table_insert = ("""
@@ -102,12 +105,14 @@ INSERT INTO artists(artist_id,name,location,latitude,longitude)
 VALUES(%s,%s,%s,%s,%s) 
 ON CONFLICT 
 ON CONSTRAINT artists_pk 
-DO UPDATE SET name=EXCLUDED.name, location=EXCLUDED.location,latitude=EXCLUDED.latitude,longitude=EXCLUDED.longitude
+DO NOTHING
 """)
 
 time_table_insert = ("""
 INSERT INTO time(start_time, hour, day, week, month,year, weekday)
 VALUES(%s,%s,%s,%s,%s,%s,%s)
+ON CONFLICT ON CONSTRAINT time_pk 
+DO NOTHING
 """)
 
 # FIND SONGS
@@ -121,6 +126,5 @@ ON s.artist_id = a.artist_id WHERE s.title=%s AND a.artist_id=%s AND s.duration 
 
 # QUERY LISTS
 
-create_table_queries = [songplay_table_create, user_table_create, song_table_create, artist_table_create,
-                        time_table_create]
-drop_table_queries = [songplay_table_drop, user_table_drop, song_table_drop, artist_table_drop, time_table_drop]
+create_table_queries = [user_table_create, song_table_create, artist_table_create, time_table_create, songplay_table_create]
+drop_table_queries = [user_table_drop, song_table_drop, artist_table_drop, time_table_drop, songplay_table_drop]
