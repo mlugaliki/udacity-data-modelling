@@ -1,8 +1,7 @@
 import traceback
 
-from database_connection import *
-from settings import *
-from sql_queries import create_table_queries, drop_table_queries
+import psycopg2
+from sql_queries import create_table_queries, drop_table_queries, drop_database, recreate_database
 
 
 def create_database():
@@ -13,19 +12,19 @@ def create_database():
 
     try:
         # connect to default database
-        conn = psycopg2.connect("host={0} user={1} password={2}".format(host, username, password))
+        conn = psycopg2.connect("host=127.0.0.1 user=postgres password=postgres")
         conn.set_session(autocommit=True)
         cur = conn.cursor()
 
         # create sparkify database with UTF8 encoding
-        cur.execute("DROP DATABASE IF EXISTS {}".format(db_name))
-        cur.execute("CREATE DATABASE {} WITH ENCODING 'utf8' TEMPLATE template0".format(db_name))
+        cur.execute(drop_database)
+        cur.execute(recreate_database)
 
         # close connection to default database
         conn.close()
 
         # connect to sparkify database
-        conn = get_connection()
+        conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=postgres password=postgres")
         cur = conn.cursor()
         return cur, conn
     except Exception as e:

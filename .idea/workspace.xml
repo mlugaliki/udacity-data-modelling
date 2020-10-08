@@ -2,10 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb19bc7a-5ba1-488a-99f4-0555da909070" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/log_data/2018/11/2018-11-21-events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/A/.ipynb_checkpoints/TRAAAAW128F429D538-checkpoint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/A/TRAAAVO128F93133D4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABYW128F4244559.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACSL128F93462F4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACTB12903CAAF15.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACVS128E078BE39.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACZK128F4243829.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAZH128F930419A.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/B/B/.ipynb_checkpoints/TRABBZN12903CD9297-checkpoint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBXU128F92FEF48.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBZN12903CD9297.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCXB128F4286BD3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCYE128F934CE1D.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/READ.md" beforeDir="false" afterPath="$PROJECT_DIR$/READ.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/create_tables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABCL128F4286650.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABCL128F4286650.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABDL12903CAABBA.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABDL12903CAABBA.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABJL12903CDCF1A.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABJL12903CDCF1A.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABJV128F1460C49.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABJV128F1460C49.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABLR128F423B7E3.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABLR128F423B7E3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABNV128F425CEE1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABNV128F425CEE1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABRB128F9306DD5.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABRB128F9306DD5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABVM128F92CA9DC.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABVM128F92CA9DC.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABXG128F9318EBD.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABXG128F9318EBD.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/B/TRAABYN12903CFD305.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/B/TRAABYN12903CFD305.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACCG128F92E8A55.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACCG128F92E8A55.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACER128F4290F96.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACER128F4290F96.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACFV128F935E50B.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACFV128F935E50B.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACHN128F1489601.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACHN128F1489601.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACIW12903CC0F6D.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACIW12903CC0F6D.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACLV128F427E123.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACLV128F427E123.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACNS128F14A2DF5.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACNS128F14A2DF5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACOW128F933E35F.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACOW128F933E35F.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACPE128F421C1B9.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACPE128F421C1B9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/A/C/TRAACQT128F9331780.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/A/C/TRAACQT128F9331780.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABACN128F425B784.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABACN128F425B784.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAFJ128F42AF24E.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAFJ128F42AF24E.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAFP128F931E9A1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAFP128F931E9A1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAIO128F42938F9.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAIO128F42938F9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABATO128F42627E9.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABATO128F42627E9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAVQ12903CBF7E0.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAVQ12903CBF7E0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAWW128F4250A31.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAWW128F4250A31.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAXL128F424FC50.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAXL128F424FC50.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAXR128F426515F.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAXR128F426515F.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/A/TRABAXV128F92F6AE3.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/A/TRABAXV128F92F6AE3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBAM128F429D223.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBAM128F429D223.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBBV128F42967D7.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBBV128F42967D7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBJE12903CDB442.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBJE12903CDB442.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBKX128F4285205.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBKX128F4285205.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBLU128F93349CF.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBLU128F93349CF.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBNP128F932546F.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBNP128F932546F.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBOP128F931B50D.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBOP128F931B50D.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBOR128F4286200.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBOR128F4286200.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBTA128F933D304.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBTA128F933D304.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/B/TRABBVJ128F92F7EAA.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/B/TRABBVJ128F92F7EAA.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCAJ12903CDFCC2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCAJ12903CDFCC2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCEC128F426456E.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCEC128F426456E.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCEI128F424C983.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCEI128F424C983.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCFL128F149BB0D.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCFL128F149BB0D.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCIX128F4265903.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCIX128F4265903.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCKL128F423A778.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCKL128F423A778.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCPZ128F4275C32.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCPZ128F4275C32.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCRU128F423F449.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCRU128F423F449.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCTK128F934B224.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCTK128F934B224.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/B/C/TRABCUQ128E0783E2B.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/song_data/A/B/C/TRABCUQ128E0783E2B.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/song_data/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database_connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.png" beforeDir="false" afterPath="$PROJECT_DIR$/db.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/etl.py" beforeDir="false" afterPath="$PROJECT_DIR$/etl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sql_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/sql_queries.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,17 +122,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/log_data/2018/11" />
+      <recent name="$PROJECT_DIR$/data/song_data" />
+      <recent name="$PROJECT_DIR$/data/log_data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data/log_data/2018/11" />
       <recent name="$PROJECT_DIR$/data/song_data/B/C" />
       <recent name="$PROJECT_DIR$/data/song_data/B/B" />
       <recent name="$PROJECT_DIR$/data/song_data/B/A" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/log_data/2018/11" />
-      <recent name="$PROJECT_DIR$/data/song_data" />
-      <recent name="$PROJECT_DIR$/data/log_data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -143,7 +214,9 @@
       <option name="presentableId" value="Default" />
       <updated>1601294792670</updated>
       <workItem from="1601294804622" duration="43574000" />
-      <workItem from="1601581671104" duration="11585000" />
+      <workItem from="1601581671104" duration="11724000" />
+      <workItem from="1601878664760" duration="9480000" />
+      <workItem from="1601924024558" duration="11715000" />
     </task>
     <servers />
   </component>
@@ -155,7 +228,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -166,13 +241,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/create_tables.py</url>
-          <line>20</line>
+          <line>19</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/create_tables.py</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/etl.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -180,7 +260,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/udacity$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1601392175146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/udacity$main.coverage" NAME="main Coverage Results" MODIFIED="1601624589091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/udacity$etl.coverage" NAME="etl Coverage Results" MODIFIED="1601629523085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/udacity$create_tables.coverage" NAME="create_tables Coverage Results" MODIFIED="1601629514682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/udacity$etl.coverage" NAME="etl Coverage Results" MODIFIED="1601932563688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/udacity$create_tables.coverage" NAME="create_tables Coverage Results" MODIFIED="1601879156288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

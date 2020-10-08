@@ -16,66 +16,63 @@ CREATE TABLE public.songplays (
 	song_id varchar NULL,
 	artist_id varchar NULL,
 	session_id numeric NOT NULL,
-	location varchar NOT NULL,
+	"location" varchar NOT NULL,
 	user_agent varchar NOT NULL,
-	level varchar(4) NOT NULL,
+	"level" varchar(4) NOT NULL,
 	CONSTRAINT songplays_pk PRIMARY KEY (songplyid),
 	CONSTRAINT songplays_artist_fk FOREIGN KEY (artist_id) REFERENCES artists(artist_id),
 	CONSTRAINT songplays_songs_fk FOREIGN KEY (song_id) REFERENCES songs(song_id),
 	CONSTRAINT songplays_time_fk FOREIGN KEY (start_time) REFERENCES "time"(start_time),
 	CONSTRAINT songplays_users_fk FOREIGN KEY (user_id) REFERENCES users(user_id)
-)
+);
 """)
 
 user_table_create = ("""
-CREATE TABLE users
-(
-    user_id    numeric    NOT NULL,
-    first_name varchar    NOT NULL,
-    last_name  varchar    NOT NULL,
-    gender     varchar(1) NOT NULL,
-    level      varchar(4) NULL,
-    CONSTRAINT users_pk PRIMARY KEY (user_id)
-)
+CREATE TABLE public.users (
+	user_id numeric NOT NULL,
+	first_name varchar NOT NULL,
+	last_name varchar NOT NULL,
+	gender varchar(1) NOT NULL,
+	"level" varchar(4) NULL,
+	CONSTRAINT users_pk PRIMARY KEY (user_id)
+);
 """)
 
 song_table_create = ("""
-CREATE TABLE songs
-(
-    song_id   varchar NOT NULL,
-    title     varchar NOT NULL,
-    artist_id varchar NOT NULL,
-    year      int4    NOT NULL,
-    duration  numeric NOT NULL,
-    CONSTRAINT songs_pk PRIMARY KEY (song_id),
-    CONSTRAINT songs_un UNIQUE (song_id, artist_id)
-)
+CREATE TABLE public.songs (
+	song_id varchar NOT NULL,
+	title varchar NOT NULL,
+	artist_id varchar NOT NULL,
+	"year" int4 NOT NULL,
+	duration numeric NOT NULL,
+	CONSTRAINT songs_pk PRIMARY KEY (song_id),
+	CONSTRAINT songs_un UNIQUE (song_id, artist_id)
+);
+
 """)
 
 artist_table_create = ("""
-CREATE TABLE artists
-(
-    artist_id varchar NOT NULL,
-    name      varchar NOT NULL,
-    location  varchar NOT NULL,
-    latitude  numeric NULL,
-    longitude numeric NULL,
-    CONSTRAINT artists_pk PRIMARY KEY (artist_id)
-)
+CREATE TABLE public.artists (
+	artist_id varchar NOT NULL,
+	"name" varchar NOT NULL,
+	"location" varchar NOT NULL,
+	latitude numeric NULL,
+	longitude numeric NULL,
+	CONSTRAINT artists_pk PRIMARY KEY (artist_id)
+);
 """)
 
 time_table_create = ("""
-CREATE TABLE time (
+CREATE TABLE public."time" (
 	start_time timestamp NOT NULL,
-	hour int4 NOT NULL,
-	day int4 NOT NULL,
+	"hour" int4 NOT NULL,
+	"day" int4 NOT NULL,
 	week int4 NOT NULL,
-	month int4 NOT NULL,
-	year int4 NOT NULL,
+	"month" int4 NOT NULL,
+	"year" int4 NOT NULL,
 	weekday int4 NOT NULL,
 	CONSTRAINT time_pk PRIMARY KEY (start_time)
-)
-
+);
 """)
 
 # INSERT RECORDS
@@ -115,16 +112,24 @@ ON CONFLICT ON CONSTRAINT time_pk
 DO NOTHING
 """)
 
+drop_database = ("""
+DROP DATABASE IF EXISTS sparkifydb
+""")
+
+recreate_database = ("""
+CREATE DATABASE sparkifydb WITH ENCODING 'utf8' TEMPLATE template0
+""")
 # FIND SONGS
 
 song_select = ("""
 SELECT s.song_id, s.artist_id 
 FROM songs s 
 INNER JOIN artists a 
-ON s.artist_id = a.artist_id WHERE s.title=%s AND a.artist_id=%s AND s.duration = %s
+ON s.artist_id = a.artist_id WHERE s.title=%s AND a.name=%s
 """)
 
 # QUERY LISTS
 
-create_table_queries = [user_table_create, song_table_create, artist_table_create, time_table_create, songplay_table_create]
-drop_table_queries = [user_table_drop, song_table_drop, artist_table_drop, time_table_drop, songplay_table_drop]
+create_table_queries = [user_table_create, artist_table_create, time_table_create, song_table_create,
+                        songplay_table_create]
+drop_table_queries = [songplay_table_drop, user_table_drop, song_table_drop, artist_table_drop, time_table_drop]
